@@ -37,8 +37,9 @@
 
 ### 1. 克隆项目
 
+
 ```bash
-git clone https://github.com/comeonzhj/Auto-Redbook-Skills.git
+git clone https://github.com/dzq769842453/Auto-Redbook-Skills.git
 cd Auto-Redbook-Skills
 ```
 
