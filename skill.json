@@ -1,0 +1,65 @@
+{
+  "name": "xhs-auto-creator",
+  "version": "2.0.0",
+  "description": "小红书笔记素材创作技能。根据用户需求和提供的资料，撰写小红书笔记内容（标题+正文），生成图片卡片（封面+正文卡片），支持多种主题皮肤和分页模式。",
+  "author": "Auto-Redbook-Skills",
+  "license": "MIT",
+  "runtime": "nodejs20",
+  "entry": "scripts/render_xhs_v2.js",
+  "dependencies": [], 
+  "disableSpawn": true, 
+  "input": {
+    "type": "object",
+    "properties": {
+      "content": {
+        "type": "string",
+        "description": "小红书笔记正文内容"
+      },
+      "title": {
+        "type": "string",
+        "description": "笔记标题（不超过20字）"
+      },
+      "theme": {
+        "type": "string",
+        "description": "主题风格",
+        "enum": ["default", "playful-geometric", "neo-brutalism", "botanical", "professional", "retro", "terminal", "sketch"],
+        "default": "default"
+      },
+      "mode": {
+        "type": "string",
+        "description": "分页模式",
+        "enum": ["separator", "auto-fit", "auto-split", "dynamic"],
+        "default": "auto-fit"
+      },
+      "emoji": {
+        "type": "string",
+        "description": "封面装饰Emoji"
+      },
+      "subtitle": {
+        "type": "string",
+        "description": "封面副标题"
+      }
+    },
+    "required": ["content"]
+  },
+  "output": {
+    "type": "object",
+    "properties": {
+      "cards": {
+        "type": "array",
+        "description": "生成的图片卡片路径列表"
+      },
+      "cover": {
+        "type": "string",
+        "description": "封面图片路径"
+      }
+    }
+  },
+  "commands": [
+    {
+      "name": "create",
+      "description": "创建小红书笔记素材",
+      "usage": "/小红书笔记 创建 <内容> [--theme <主题>] [--mode <分页模式>]"
+    }
+  ]
+}

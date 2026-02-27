@@ -1,0 +1,26 @@
+# 生成的图片文件
+*.png
+
+# 环境文件
+.env
+
+# Python虚拟环境
+venv/
+
+# Node.js依赖
+node_modules/
+
+# IDE文件
+.vscode/
+.idea/
+
+# 临时文件
+*.tmp
+*.temp
+
+# 日志文件
+*.log
+
+# 备份文件
+*.bak
+*.backup
