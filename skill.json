@@ -60,6 +60,12 @@
       "name": "create",
       "description": "创建小红书笔记素材",
       "usage": "/小红书笔记 创建 <内容> [--theme <主题>] [--mode <分页模式>]"
+    },
+    {
+      "name": "publish",
+      "description": "自动发布小红书笔记",
+      "usage": "/小红书笔记 发布 <markdown文件> [--style <主题>] [--title <标题>] [--desc <描述>]",
+      "entry": "scripts/auto_publish.js"
     }
   ]
 }
