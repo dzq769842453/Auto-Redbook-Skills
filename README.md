@@ -1,10 +1,10 @@
-## 📕 Auto-Redbook-Skills（已重构版）
+## 📕 Auto-Redbook-Skills
 
 > 自动撰写小红书笔记、生成多主题卡片、可选自动发布的 Skills  
 
 ---
 
-## ✨ 本次重构亮点
+## ✨ 亮点
 
 - **🎨 8 套主题皮肤**：默认简约灰 + Playful Geometric / Neo-Brutalism / Botanical / Professional / Retro / Terminal / Sketch
 - **📐 4 种分页模式**：
