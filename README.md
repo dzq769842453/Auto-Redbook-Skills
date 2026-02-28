@@ -46,6 +46,7 @@ cd Auto-Redbook-Skills
 可以将本项目放到支持 Skills 的客户端目录，例如：
 
 - Claude：`~/.claude/skills/`
+- Openclaw `~/.openclaw/skills/`
 - Alma：`~/.config/Alma/skills/`
 - TRAE：`/your-path/.trae/skills/`
 
